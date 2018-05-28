@@ -13,7 +13,7 @@ def self.new_by_filename(some_filename)
   puts "#{filename_parts}"
   new_song = Song.new(filename_parts[1])
   new_song.artist = Artist.find_or_create_by_name(filename_parts[0])
-  if new_song.artist
+  if new_song.artist !=1
     new_song.artist.add_song(new_song)
     new_song.artist.save
   else
