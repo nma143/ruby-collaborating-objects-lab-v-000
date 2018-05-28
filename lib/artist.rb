@@ -43,6 +43,7 @@ class Artist
       matching_artist.save
       matching_artist
     end
+    matching_artist
 
   end
 
