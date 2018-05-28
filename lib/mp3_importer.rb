@@ -20,7 +20,6 @@ class MP3Importer
   def import
 
     @files.each do |filename|
-      puts "heyo #{filename}"
       Song.new_by_filename(filename)
     end
   end
