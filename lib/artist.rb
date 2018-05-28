@@ -38,7 +38,10 @@ class Artist
     end
 
     if match==0
+      
       matching_artist= Artist.new(name)
+      matching_artist.save
+      matching_artist
     end
 
   end
