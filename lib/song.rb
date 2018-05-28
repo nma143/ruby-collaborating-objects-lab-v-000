@@ -21,7 +21,7 @@ def self.new_by_filename(some_filename)
   puts "boooo #{new_song.artist}"
   #binding.pry
   #if new_song.artist ==1
-    #new_song.artist.add_song(new_song)
+    new_song.artist.add_song(new_song)
     puts "made song #{new_song.name}"
     #new_song.artist.save
   #else
