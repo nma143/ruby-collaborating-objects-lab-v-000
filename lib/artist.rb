@@ -40,7 +40,7 @@ class Artist
     if match==0
       matching_artist= Artist.new(name)
     end
-    binding.pry
+
   end
 
   def print_songs
