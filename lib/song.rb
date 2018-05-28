@@ -13,7 +13,7 @@ def self.new_by_filename(some_filename)
   filename_parts = some_filename.split(" - ")
   puts "#{filename_parts}"
   new_song = Song.new(filename_parts[1])
-  if filename_parts[1] == "Real Estate"
+  if filename_parts[0] == "Real Estate"
     puts "jkfjkfdjkdfjkldfkj;kda"
   end
 
