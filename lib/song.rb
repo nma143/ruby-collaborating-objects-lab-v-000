@@ -20,7 +20,7 @@ def self.new_by_filename(some_filename)
     new_song.artist.add_song(new_song)
     new_song.artist.save
   else
-    new_song.artist = Artist.new(filename_parts[0])
+    #new_song.artist = Artist.new(filename_parts[0])
     new_song.artist.add_song(new_song)
     new_song.artist.save
 
