@@ -28,17 +28,14 @@ class Artist
 
   def self.find_or_create_by_name(name)
 
-    match = 0
     matching_artist = nil
     @@all.each do |artist|
       if artist.name == name
-        match =1
-        puts "lalala #{artist}"
         matching_artist = artist
       end
     end
 
-    if match==0
+    if matching_artist == nil
       matching_artist= Artist.new(name)
       matching_artist.save
       matching_artist
