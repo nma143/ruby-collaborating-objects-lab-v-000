@@ -9,16 +9,11 @@ def initialize (name)
 end
 
 def self.new_by_filename(some_filename)
-  puts "#{some_filename}"
+
   filename_parts = some_filename.split(" - ")
-  puts "bbbbb #{filename_parts}"
   new_song = Song.new(filename_parts[1])
-  puts "#{filename_parts[0]}"
   new_song.artist = Artist.find_or_create_by_name(filename_parts[0])
-  puts "#{new_song.artist}"
   new_song.artist.add_song(new_song)
-  puts "made song #{new_song.name}"
-  #binding.pry
   new_song
 end
 
