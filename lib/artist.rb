@@ -32,7 +32,7 @@ class Artist
     @@all.each do |artist|
       if artist.name == name
         match =1
-        puts "#{match}"
+        return artist
       end
     end
 
