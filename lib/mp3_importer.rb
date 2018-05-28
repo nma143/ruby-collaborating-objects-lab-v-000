@@ -24,8 +24,6 @@ class MP3Importer
       Song.new_by_filename(filename)
 
     end
-    puts "lalala"
-    binding.pry
   end
 
 
