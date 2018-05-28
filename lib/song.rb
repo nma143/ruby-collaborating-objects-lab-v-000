@@ -17,7 +17,7 @@ def self.new_by_filename(some_filename)
   puts "#{new_song.artist}"
   #binding.pry
   if new_song.artist ==1
-    Artist.all.detect { |artist| artist.name==filename_parts[0]}
+    Artist.all.detect { |artist| artist.name=filename_parts[0]}
     new_song.artist.add_song(new_song)
     #new_song.artist.save
   else
