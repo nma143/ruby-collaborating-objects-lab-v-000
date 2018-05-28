@@ -18,7 +18,7 @@ def self.new_by_filename(some_filename)
 
   new_song.artist.add_song(new_song)
   puts "made song #{new_song.name}"
-  binding.pry
+  #binding.pry
 end
 
 def artist_name= (artistname)
