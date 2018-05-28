@@ -16,13 +16,13 @@ def self.new_by_filename(some_filename)
   new_song.artist = Artist.find_or_create_by_name(filename_parts[0])
   puts "#{new_song.artist}"
   #binding.pry
-  if new_song.artist ==1
+  #if new_song.artist ==1
     new_song.artist.add_song(new_song)
     #new_song.artist.save
-  else
+  #else
     #new_song.artist = Artist.new(filename_parts[0])
-    new_song.artist.add_song(new_song)
-    new_song.artist.save
+    #new_song.artist.add_song(new_song)
+    #new_song.artist.save
 
   end
 end
