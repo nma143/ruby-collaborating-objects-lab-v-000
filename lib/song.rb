@@ -18,7 +18,7 @@ def self.new_by_filename(some_filename)
   end
   puts "#{filename_parts[0]}"
   new_song.artist = Artist.find_or_create_by_name(filename_parts[0])
-  puts "#{new_song.artist}"
+  puts "boooo #{new_song.artist}"
   #binding.pry
   #if new_song.artist ==1
     new_song.artist.add_song(new_song)
