@@ -29,14 +29,16 @@ class Artist
   def self.find_or_create_by_name(name)
 
     match = 0
+    matching_artist = nil
     @@all.each do |artist|
       if artist.name == name
         match =1
+        matching_artist = artist
       end
     end
 
     if match==0
-      new_artist = Artist.new(name)
+      matching_artist= Artist.new(name)
     end
     binding.pry
   end
