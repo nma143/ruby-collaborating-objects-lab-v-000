@@ -32,13 +32,14 @@ class Artist
     @@all.each do |artist|
       if artist.name == name
         match =1
+        puts "#{match}"
       end
     end
 
     if match==0
       new_artist = Artist.new(name)
     end
-    puts "#{match}"
+
   end
 
   def print_songs
