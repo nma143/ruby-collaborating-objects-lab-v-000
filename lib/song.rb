@@ -7,7 +7,7 @@ def initialize (name)
 
 end
 
-def self.new_by_filename(some_filename)
+def new_by_filename(some_filename)
 
   filename_parts = some_filename.split(" - ")
   new_song = Song.new(filename_parts[1])
