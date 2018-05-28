@@ -24,7 +24,7 @@ def self.new_by_filename(some_filename)
     #new_song.artist.add_song(new_song)
     #new_song.artist.save
 
-  end
+  #end
 end
 
 def artist_name= (artistname)
