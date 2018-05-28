@@ -40,7 +40,6 @@ class Artist
 
     if match==0
       matching_artist= Artist.new(name)
-      puts "made new one #{matching_artist.name}"
       matching_artist.save
       matching_artist
     end
