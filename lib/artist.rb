@@ -33,7 +33,7 @@ class Artist
     @@all.each do |artist|
       if artist.name == name
         match =1
-        puts "#{artist}"
+        puts "lalala #{artist}"
         matching_artist = artist
       end
     end
